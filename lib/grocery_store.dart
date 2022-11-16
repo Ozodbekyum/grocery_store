@@ -14,15 +14,17 @@ double getTotal(List products) {
 }
 
 // Define a function that finds amount of products from a list of products
-int getAmount(List products) {
   /// Returns the amount of products from a list of products
   // args:
   //  products: A list of products
   //  returns:
   // The amount of products
 
+int getAmount(List products) {
   int amount = 0;
-
+for (var item in products) {
+    amount++;
+  }
   return amount;
 }
 
