@@ -118,8 +118,12 @@ int getAmountDairy(List products) {
   //  products: A list of products
   //  returns:
   // The amount of dairy products
-
   int amount = 0;
+  for (var item in products) {
+    if (item['type'] == 'dairy') {
+      amount += 1;
+    }
+  }
 
   return amount;
 }
