@@ -207,7 +207,13 @@ String getCheapest(List products) {
   // The cheapest product
 
   String cheapest = '';
-
+  double a = 12;
+  for (var item in products) {
+    if (item['price'] < a) {
+      a = item['price'];
+      cheapest = item['name'];
+    }
+  }
   return cheapest;
 }
 
@@ -220,7 +226,15 @@ String getMostExpensiveFruit(List products) {
   // The most expensive fruit
 
   String mostExpensive = '';
-
+  double a = 0;
+  for (var item in products) {
+    if (item['type'] == 'fruit') {
+      if (item['price'] > a) {
+        a = item['price'];
+        mostExpensive = item['name'];
+      }
+    }
+  }
   return mostExpensive;
 }
 
@@ -233,7 +247,15 @@ String getCheapestFruit(List products) {
   // The cheapest fruit
 
   String cheapest = '';
-
+  double a = 12;
+  for (var item in products) {
+    if (item['type'] == 'fruit') {
+      if (item['price'] < a) {
+        a = item['price'];
+        cheapest = item['name'];
+      }
+    }
+  }
   return cheapest;
 }
 
@@ -246,7 +268,15 @@ String getMostExpensiveVegetable(List products) {
   // The most expensive vegetable
 
   String mostExpensive = '';
-
+double a = 0;
+  for (var item in products) {
+    if (item['type'] == 'vegetable') {
+      if (item['price'] > a) {
+        a = item['price'];
+        mostExpensive = item['name'];
+      }
+    }
+  }
   return mostExpensive;
 }
 
@@ -259,7 +289,15 @@ String getCheapestVegetable(List products) {
   // The cheapest vegetable
 
   String cheapest = '';
-
+double a = 12;
+  for (var item in products) {
+    if (item['type'] == 'vegetable') {
+      if (item['price'] < a) {
+        a = item['price'];
+        cheapest = item['name'];
+      }
+    }
+  }
   return cheapest;
 }
 
@@ -272,7 +310,15 @@ String getMostExpensiveDairy(List products) {
   // The most expensive dairy product
 
   String mostExpensive = '';
-
+double a = 0;
+  for (var item in products) {
+    if (item['type'] == 'dairy') {
+      if (item['price'] > a) {
+        a = item['price'];
+        mostExpensive = item['name'];
+      }
+    }
+  }
   return mostExpensive;
 }
 
@@ -285,7 +331,15 @@ String getCheapestDairy(List products) {
   // The cheapest dairy product
 
   String cheapest = '';
-
+double a = 12;
+  for (var item in products) {
+    if (item['type'] == 'dairy') {
+      if (item['price'] < a) {
+        a = item['price'];
+        cheapest = item['name'];
+      }
+    }
+  }
   return cheapest;
 }
 
@@ -298,7 +352,15 @@ String getMostExpensiveMeat(List products) {
   // The most expensive meat product
 
   String mostExpensive = '';
-
+double a = 0;
+  for (var item in products) {
+    if (item['type'] == 'meat') {
+      if (item['price'] > a) {
+        a = item['price'];
+        mostExpensive = item['name'];
+      }
+    }
+  }
   return mostExpensive;
 }
 
@@ -311,6 +373,14 @@ String getCheapestMeat(List products) {
   // The cheapest meat product
 
   String cheapest = '';
-
+double a = 12;
+  for (var item in products) {
+    if (item['type'] == 'meat') {
+      if (item['price'] < a) {
+        a = item['price'];
+        cheapest = item['name'];
+      }
+    }
+  }
   return cheapest;
 }
