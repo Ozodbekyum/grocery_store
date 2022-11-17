@@ -67,9 +67,13 @@ double getTotalPricesFruits(List products) {
   //  products: A list of products
   //  returns:
   // The total of prices of fruits
-
   double total = 0.0;
 
+  for (var item in products) {
+    if (item['type'] == 'fruit') {
+      total += item['price'];
+    }
+  }
   return total;
 }
 
