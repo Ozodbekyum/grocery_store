@@ -188,7 +188,13 @@ String getMostExpensive(List products) {
   // The most expensive product
 
   String mostExpensive = '';
-
+  double a = 0;
+  for (var item in products) {
+    if (item['price'] > a) {
+      a = item['price'];
+      mostExpensive = item['name'];
+    }
+  }
   return mostExpensive;
 }
 
