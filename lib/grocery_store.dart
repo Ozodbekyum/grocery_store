@@ -103,7 +103,11 @@ double getTotalPricesVegetables(List products) {
   // The total of prices of vegetables
 
   double total = 0.0;
-
+  for (var item in products) {
+    if (item['type'] == 'vegetable') {
+      total += item['price'];
+    }
+  }
   return total;
 }
 
