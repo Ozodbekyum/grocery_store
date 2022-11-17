@@ -50,8 +50,12 @@ int getAmountFruits(List products) {
   //  products: A list of products
   //  returns:
   // The amount of fruits
-
   int amount = 0;
+  for (var item in products) {
+    if (item['type'] == 'fruit') {
+      amount += 1;
+    }
+  }
 
   return amount;
 }
